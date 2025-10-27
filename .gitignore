@@ -1,0 +1,49 @@
+# --- macOS junk ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+._*
+
+# --- Editors/IDEs ---
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# --- CMake/build output ---
+/build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+cmake_install.cmake
+install_manifest.txt
+
+# --- DevkitPro/Wii U artifacts ---
+*.o
+*.d
+*.a
+*.elf
+*.rpx
+*.rpl
+*.map
+*.lst
+*.wuhb
+
+# --- Logs & packaging ---
+*.log
+/dist/
+*.zip
+*.7z
+*.tar
+*.tar.gz
