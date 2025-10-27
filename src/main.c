@@ -28,6 +28,15 @@ static void screen_init(void) {
   drcBuf = MEMAllocFromDefaultHeapEx(drcSize, 0x40);
   OSScreenSetBufferEx(0, tvBuf);
   OSScreenSetBufferEx(1, drcBuf);
+OSScreenEnableEx(0, 1);   // TV on
+OSScreenEnableEx(1, 1);   // GamePad on
+
+
+// prime the buffers once so Cemu shows a frame
+OSScreenClearBufferEx(0, 0);
+OSScreenClearBufferEx(1, 0);
+OSScreenFlipBuffersEx(0);
+OSScreenFlipBuffersEx(1);
 }
 
 static void screen_shutdown(void) {
